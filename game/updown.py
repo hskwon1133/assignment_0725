@@ -31,5 +31,3 @@ def play_updown() :
     else :
         print(f'아쉽게도 10회 시도 중 맞추지 못해 실패하였습니다.\n'
               f'정답은 {com_num}입니다.')
-
-play_updown()
