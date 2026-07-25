@@ -25,7 +25,7 @@ def play_updown() :
             print(f'[{com_num}], 정답입니다~~')
             cnt += x
             break
-    print(cnt)
+
     if cnt > 0 :
         print(f'총 10회 중 {cnt}회만에 정답을 맞추었습니다.')
     else :
