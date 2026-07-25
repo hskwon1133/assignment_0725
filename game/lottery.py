@@ -29,7 +29,7 @@ def play_lottery() :
             user_num = int(input(f'{cnt}번째 숫자 입력(1~45, 0=게임종료): ' ))
             if user_num > 45 :
                 print('45 이상의 숫자를 입력하였습니다. 다시 입력해주세요.')
-            elif user_num == user_num_lst :
+            elif user_num == 중복 숫자 중 user_num_lst : # 여기 숫자 중에서 중복 거르는 거 넣어야 함.
 
                 print('숫자를 중복 입력하였습니다. 다시 입력해주세요.')
             else :
