@@ -9,14 +9,16 @@ def play_updown() :
     while x in range(0, 10):
         x+=1
         while True :
-            user_num = int(input('입력(종료=0) : '))
-            if user_num != int():
+            user_num = int(input('입력(1~100, 종료=0) : '))
+            if user_num > 100 :
+                print('100 이상의 숫자를 입력하였습니다. 100이하의 숫자를 입력해주세요.')
+            elif user_num == int(user_num):
                 break
             else :
                 print('잘못된 입력입니다. 다시 입력해주세요.')
         if user_num == 0:
             print('게임을 종료합니다.')
-            return 0
+        #    return 0
         elif user_num < com_num:
             print(f'[{x}]회 시도, 업!')
         elif user_num > com_num:
