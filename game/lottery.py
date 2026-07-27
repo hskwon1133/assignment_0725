@@ -17,7 +17,7 @@ def play_lottery() :
     # 6자리 숫자 랜덤 결정하기
     com_num_lst = rd.sample(num_lst, 6)
     # 추가 보너스 숫자 랜덤 결정하기
-    num_lst = [bonus_num for bonus_num in num_lst if num_lst not in com_num_lst]
+    num_lst = [n for n in num_lst if n not in com_num_lst]
     bonus_num = rd.sample(num_lst, 1)
     # 6자리 번호 입력하기 (이렇게 하면 개발은 쉽지만 유저의 입력 오류가 많을 가능성 높음)
     # user_num = list(map(int, input('숫자 6개 입력(공백필수)').split()))
