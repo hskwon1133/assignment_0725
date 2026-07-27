@@ -18,7 +18,7 @@ def play_rps() :
                 print('잘못된 입력입니다. 다시 입력해주세요.')
         if user_rps == '0':
             print('게임을 종료합니다.')
-        #    return 0
+            return
         elif ((user_rps == "가위" and com_rps == '바위') or
               (user_rps == "바위" and com_rps == '보') or
               (user_rps == "보" and com_rps == '가위')):
