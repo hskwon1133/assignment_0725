@@ -11,7 +11,6 @@ import random as rd
 def play_lottery() :
     num_lst = list(range(1,46))
     x = 0
-    cnt = 1
     print('===== 3. 로또 번호 맞추기 =====')
     print(f'1~45까지 숫자 중 내가 선택한 6개 숫자와 추첨으로 결정된 숫자가 일치하는 개수에 따라 당첨!')
     # 6자리 숫자 랜덤 결정하기
