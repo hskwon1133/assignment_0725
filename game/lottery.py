@@ -40,13 +40,12 @@ def play_lottery() :
         while x in range(0,6):
             x += 1
             while True:
-                user_num = int(input(f'{cnt}번째 숫자 입력(1~45, 0=게임종료): ' ))
+                user_num = int(input(f'{x}번째 숫자 입력(1~45, 0=게임종료): ' ))
                 if int(user_num) > 45 :
                     print('45 이상의 숫자를 입력하였습니다. 다시 입력해주세요.')
                 elif int(user_num) in user_num_lst :
                     print('숫자를 중복 입력하였습니다. 다시 입력해주세요.')
                 else :
-                    cnt += 1
                     break
 
             if user_num == 0 :
