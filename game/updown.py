@@ -18,7 +18,7 @@ def play_updown() :
                 print('잘못된 입력입니다. 다시 입력해주세요.')
         if user_num == 0:
             print('게임을 종료합니다.')
-        #    return 0
+            return
         elif user_num < com_num:
             print(f'[{x}]회 시도, 업!')
         elif user_num > com_num:
