@@ -9,8 +9,8 @@ def play_updown() :
     while x in range(0, 10):
         while True :
             user_num = int(input('입력(1~100, 종료=0) : '))
-            if user_num > 100 :
-                print('100 이상의 숫자를 입력하였습니다. 100이하의 숫자를 입력해주세요.')
+            if user_num > 100 or user_num < 0 :
+                print('1 ~ 100 외의 숫자를 입력하였습니다. 1~100의 숫자를 입력해주세요.')
             elif user_num in range(1,101):
                 break
             else :
