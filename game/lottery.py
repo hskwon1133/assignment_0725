@@ -51,7 +51,7 @@ def play_lottery() :
 
             if user_num == 0 :
                 print('게임을 종료합니다.')
-       #         return 0
+                return
             else :
                 user_num_lst.append(user_num)
 
